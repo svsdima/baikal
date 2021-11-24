@@ -1,0 +1,35 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url('../fonts/#{$file_name}.woff') format('woff'),
+			url('../fonts/#{$file_name}.woff2') format('woff2');
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+$title: #000000;
+$tooltip: #76767a;
+$lightLine: #e5e5eb;
+$line: #d9d9de;
+$mainText: #333333;
+$activeLink: #d51a1a;
+$green: #70cf29;
+$blue: #3fa9f5;
+$hoverText: #0050b2;
+$hoverBlueElement: #0061d9;
+$hoverGreenElement: #64bd22;
+$transition: all 0.2s ease;
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,regular,500,700);
+@import url(https://fonts.googleapis.com/css?family=PT+Serif:regular,700);
+
+@import 'fonts';
+@import './base/libs';
+@import './base/global';
+
+@import './block/_header';
+@import './block/tour-list';
+@import './block/activities';
+
+@import './base/media';
