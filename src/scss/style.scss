@@ -17,9 +17,11 @@ $activeLink: #d51a1a;
 $green: #70cf29;
 $blue: #3fa9f5;
 $hoverText: #0050b2;
-$hoverBlueElement: #0061d9;
+$blueElement: #0061d9;
+$hoverDarkBlueElement: #004395;
 $hoverGreenElement: #64bd22;
 $transition: all 0.2s ease;
+$gap: 32px;
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,regular,500,700);
 @import url(https://fonts.googleapis.com/css?family=PT+Serif:regular,700);
@@ -31,5 +33,11 @@ $transition: all 0.2s ease;
 @import './block/_header';
 @import './block/tour-list';
 @import './block/activities';
+@import './block/suggestions';
+@import './block/baikal-map';
+@import './block/gallery';
+@import './block/easy';
+@import './block/numbers';
 
+@import './block/swiper';
 @import './base/media';

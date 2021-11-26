@@ -1,0 +1,14 @@
+.gallery {
+	background-color: rgba($blue, 0.07);
+	padding: 30px 0;
+	&__wrapper {
+		position: relative;
+	}
+	&__up {
+		display: grid;
+		grid-template-columns: 1fr auto;
+		.title {
+			text-align: left;
+		}
+	}
+}

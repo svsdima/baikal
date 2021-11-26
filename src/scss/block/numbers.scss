@@ -1,0 +1,22 @@
+.numbers {
+	padding-bottom: 80px;
+	&__wrapper {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		column-gap: $gap;
+	}
+	&__title {
+		font-family: 'PT Serif';
+		font-weight: bold;
+		font-size: 58px;
+		line-height: 130%;
+		color: $hoverGreenElement;
+	}
+	&__subtitle {
+		font-family: 'Roboto';
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 130%;
+		color: #000000;
+	}
+}

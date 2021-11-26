@@ -1,0 +1,29 @@
+.baikal-map {
+	padding-bottom: 80px;
+	&__wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: $gap;
+		row-gap: 80px;
+		& > :first-child {
+			grid-row-start: 1;
+			grid-row-end: 3;
+			grid-column-start: 1;
+			grid-column-end: 3;
+		}
+	}
+	&__descr {
+		display: grid;
+		grid-template-rows: auto 1fr auto;
+		.title {
+			margin-top: 0;
+			text-align: left;
+		}
+	}
+	&__link {
+		font-size: 16px;
+		line-height: 19px;
+		text-decoration-line: underline;
+		color: $tooltip;
+	}
+}
